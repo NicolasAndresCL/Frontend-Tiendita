@@ -1,9 +1,9 @@
-// App.jsx
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 import React from 'react';
-import ProductoCard from './components/ProductoCard';
+// Importa tu nuevo componente ProductoCard
+import ProductoCard from './components/ProductoCard'; // Ajusta la ruta si es diferente, ej. './ProductoCard'
 
 function App() {
   const [productos, setProductos] = useState([]);
