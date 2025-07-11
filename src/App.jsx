@@ -4,7 +4,7 @@ import './App.css';
 import React from 'react';
 // Importa tu nuevo componente ProductoCard
 import ProductoCard from './components/ProductoCard'; // Ajusta la ruta si es diferente, ej. './ProductoCard'
-
+import TituloCard from './components/TituloCard';
 function App() {
   const [productos, setProductos] = useState([]);
   const [error, setError] = useState(null);
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="p-8">
-      <h1 className="text-3xl font-bold mb-6">🛍️ Tiendita de Marian</h1>
+      <TituloCard />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {productos.map((producto) => (
           <ProductoCard key={producto.id} producto={producto} />

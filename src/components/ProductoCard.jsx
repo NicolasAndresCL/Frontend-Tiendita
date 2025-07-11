@@ -14,7 +14,9 @@ const ProductoCard = ({ producto }) => {
       <h3 className="text-lg font-bold text-gray-800 text-center mb-2 tracking-tight">
         🧸 {producto.nombre}
       </h3>
-
+      <h4 className="text-lg font-bold text-green-800 text-center mb-2 tracking-tight">
+        🏷️ {producto.descripcion}
+      </h4>
       <p className="text-lg font-semibold text-pink-700 text-center">💲 Precio: ${producto.precio}</p>
       <p className="text-sm text-gray-600 text-center">🧮 Stock: {producto.stock}</p>
 
